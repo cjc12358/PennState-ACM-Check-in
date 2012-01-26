@@ -1,10 +1,10 @@
-SETUP
+# SETUP
 ==========
 
 The Penn State ACM Check-in application is built on Python. 
 There are two dependencies:
-   1.) PyQt - Python bindings for QT   (Package for Ubuntu-based systems: "python-qt4")
-   2.) MySQLdb - Python MySQL library  (Package for Ubuntu-based systems: "python-mysqldb")
+   1. PyQt - Python bindings for QT   (Package for Ubuntu-based systems: "python-qt4")
+   2. MySQLdb - Python MySQL library  (Package for Ubuntu-based systems: "python-mysqldb")
 
 Once the dependencies are met, run it with "./Check-in.py".
 
@@ -13,10 +13,10 @@ The default host, database, table, and host are configurable in the Constants.py
 be entered in the login screen of the application.
 
 For the database, this application expects a table with four columns:
-   1.) card ID        - card ID from ID card (varchar, primary key)
-   2.) access ID      - human-readable owner of card (varchar)
-   3.) points         - the number of points (int)
-   4.) last check-in  - the time of last check-in (timestamp)
+   1. card ID        - card ID from ID card (varchar, primary key)
+   2. access ID      - human-readable owner of card (varchar)
+   3. points         - the number of points (int)
+   4. last check-in  - the time of last check-in (timestamp)
 
 Finally, the whole script is pointless without a card reader. This application was built for a card read that 
 uses keyboard emulation. Hence, you could just type the card info in, but without a card reader you have no way of 
